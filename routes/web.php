@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/bb/b1',function(){
+    return view('bb.b1');
+});
+Route::get('/bb/b2',function(){
+    return view('bb.b2');
+});
